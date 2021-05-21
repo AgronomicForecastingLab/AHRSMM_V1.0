@@ -3,7 +3,7 @@ Adaptive High-Resolution Soil Moisture Map (AHRSMM) Version 1.0
 
 To map daily surface soil moisture at any location in the continental USA, with any spatial resolution and on any date since 2016/01/01, please do the following:
 
-Please download all the 20 zip files and unzip them into one folder.
+Please download all the 20 zip files and unzip them into one folder. Before you run the following R code, make sure you have the latest version of RTools (https://cran.r-project.org/bin/windows/Rtools/) and miniconda (https://docs.conda.io/en/latest/miniconda.html) or anaconda (https://www.anaconda.com/products/individual) installed.
 
 Open the "AHRSMM_V1.0.R" file to start the mapping. Load the ".RData" which contains the fitted machine learning models and downloaded covariates for the sample Wisconsin field. You can also choose to refit the models yourself but it may take a longer time.
 
