@@ -3,9 +3,10 @@ Adaptive High-Resolution Soil Moisture Map (AHRSMM) Version 1.0
 
 To map daily surface soil moisture at any location in the continental USA, with any spatial resolution and on any date since 2016/01/01, please do the following:
 
-Please download all the 20 zip files and unzip them into one folder. Before you run the following R code, make sure you have the latest version of RTools (https://cran.r-project.org/bin/windows/Rtools/) and miniconda (https://docs.conda.io/en/latest/miniconda.html) or anaconda (https://www.anaconda.com/products/individual) installed.
+Please download all the 20 zip files and unzip them into one folder. Before you run the following R code, make sure you have the latest version of RTools (https://cran.r-project.org/bin/windows/Rtools/) and miniconda (https://docs.conda.io/en/latest/miniconda.html) installed.
 
-If you have trouble installing "rgee" or activate it using "ee_Initialize()", please refer to here: https://r-spatial.github.io/rgee/articles/setup.html
+If you have trouble using "ee_Initialize(...)", please set your Python environment manually from here: https://github.com/r-spatial/rgee/tree/help/rstudio/. Details: 1. Follow Step 1 to install earthengine-api using conda (this step can be skipped if you have no problem running ee_install(). 2. In R Studio, Go to Tools > Global Options > Python, set the Python interpreter to the directory where you have rgee: ...\r-miniconda\envs\rgee\python.exe 3. Terminate your R session and run ee_Initialize(email = 'jhuang426@wisc.edu', drive = TRUE) with your email address replaced the default one. Note: You should register Google Earth Engine Account using your email address first.
+
 
 Open the "AHRSMM_V1.0.R" file to start the mapping. Load the ".RData" which contains the fitted machine learning models and downloaded covariates for the sample Wisconsin field. You can also choose to refit the models yourself but it may take a longer time.
 
