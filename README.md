@@ -11,7 +11,7 @@ Open the "AHRSMM_V1.0.R" file to start the model fitting. Alternatively, load th
 2) Set up the Google Earth Engine.
 If you have trouble using "ee_Initialize(...)", please set your Python environment manually from here: https://github.com/r-spatial/rgee/tree/help/rstudio/. Details: 1. Follow Step 1 to install earthengine-api using conda (this step can be skipped if you have no problem running ee_install(). 2. In R Studio, Go to Tools > Global Options > Python, set the Python interpreter to the directory where you have rgee: ...\r-miniconda\envs\rgee\python.exe 3. Terminate your R session and run ee_Initialize(email = 'jhuang426@wisc.edu', drive = TRUE) with your email address replaced the default one. Note: You should register Google Earth Engine Account using your email address first. If the initialization with "email" does not work, please replace the argument "email" with "user" and run this: ee_Initialize(user = 'jhuang426@wisc.edu', drive = TRUE) or run the line without "email" or "user" ee_Initialize(drive = TRUE). When a web browser pops up and asks you to allow Google Earth Engine/R to access your Google Account, please select "Yes" to all the checkboxes (even the hidden boxes). 
 
-3) Download remote sensing data. 
+3) Download remote sensing data for target study areas. 
 Generate a shapefile for the study field (region of interest, ROI) and load it to the R environment. Define the spatial resolution and the starting and ending dates you want to generate a surface soil moisture map.
 Download the covariates from the Google Earth Engine and Google Cloud Storage using the R code. You need to create a Google Earth Engine account and initialize it using the R code.
 
